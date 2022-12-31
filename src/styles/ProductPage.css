@@ -1,0 +1,129 @@
+/* Global styles */
+:root {
+    --main-bg-color: rgba(15, 23, 42);
+    --snd-bg-color: rgb(30, 41, 59);
+    --thrd-bg-color: #3d4757;
+  
+    --main-font-color: #f8fafc;
+    --snd-font-color: #c4cdd9;
+  
+    --app-width: 1480px;
+    --main-padding: 5rem;
+    --snd-padding: 2rem;
+    --box--shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+
+.product-page-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    background-color: var(--snd-bg-color);
+    border-radius: 15px;
+    margin-top: var(--main-padding);
+    margin-bottom: var(--main-padding);
+    margin-left: var(--snd-padding);
+    margin-right: var(--snd-padding);
+}
+
+.product-image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: var(--snd-padding);
+}
+
+.product-img {
+    border-radius: 10px;
+    max-width: 480px;
+    max-height: 480px;
+    width: 100%;
+    height: auto;
+}
+
+.product-details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px;
+    align-items: flex-start;
+    width: auto;
+    height: auto;
+    padding: var(--snd-padding);
+    color: white;
+}
+
+.product-details-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product-details-box>h5 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.product-details-box>h4>span {
+    color: white;
+}
+
+.product-details-box-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product-details>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.img-thumbnail {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.atc-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.atc-box>.checkout-btn {
+    width: 200px;
+}
+
+/* Media Queries */
+@media (max-width: 600px){
+    .atc-box>.checkout-btn {
+        width: 100%;
+    }
+
+    .product-page-container {
+        margin-top: var(--snd-padding);
+    }
+    }
+
+
+
+
